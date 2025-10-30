@@ -1,16 +1,29 @@
-<!DOCTYPE html>
-
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Favourite Animal — Elephant</title>
+  <style>
+    body{font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f3f4f6}
+    main{background:white;padding:2rem;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.08);text-align:center}
+    h1{margin:0 0 1rem;font-size:1.5rem}
+    img{max-width:90vw;height:auto;border-radius:8px}
+    p{color:#555;margin-top:0.5rem}
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <main id="animal-page">
+    <h1 id="photo-heading">My favourite animal: Elephant</h1>
 
+    <!-- Image is embedded as an SVG data URI so the page works without external requests -->
+    <img
+      id="animal-image"
+      src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"> <rect width="100%" height="100%" fill="%23f7f7f9"/> <!-- ground --> <ellipse cx="400" cy="520" rx="380" ry="60" fill="%23e6e6e6"/> <!-- body --> <ellipse cx="420" cy="380" rx="200" ry="120" fill="%23999"/> <!-- head --> <ellipse cx="230" cy="360" rx="90" ry="70" fill="%23999"/> <!-- ear --> <rect x="520" y="380" width="140" height="40" rx="20" ry="20" fill="%23999" transform="rotate(15 590 400)"/> <!-- back leg --> <rect x="310" y="440" width="60" height="110" rx="20" fill="%23888"/> <rect x="430" y="440" width="60" height="110" rx="20" fill="%23888"/> <!-- trunk --> <path d="M270 380 C240 420 220 470 260 490 C300 510 320 490 330 470" fill="none" stroke="%23888" stroke-width="34" stroke-linecap="round"/> <!-- tusks --> <path d="M360 360 C400 350 430 360 470 370" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/> <circle cx="260" cy="340" r="10" fill="#222"/> <!-- eye --> <text x="400" y="80" font-size="36" text-anchor="middle" fill="%23333">Stylized Elephant Illustration</text> </svg>'
+      alt="Stylized vector illustration of an elephant"
+    />
+
+    <p>Image loaded from an embedded SVG data URI. Alt text provided for accessibility.</p>
+  </main>
 </body>
-
 </html>
